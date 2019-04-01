@@ -1,0 +1,43 @@
+$paleta_cores: (footer: rgba(0, 0, 0, 0.33), border-secundary: rgba(151, 150, 153, 0.4));
+
+img {
+  height: 500px;
+  width: 100%;
+}
+
+@for $cont from 1 through 10 {
+  .margin-top-#{$cont * 10} {
+    margin-top: 10px * $cont;
+  }
+}
+
+.min-height {
+  min-height: 720px;
+}
+
+.border-secondary {
+  padding: 3px;
+  background: map-get($paleta_cores, border-secundary);
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.badge {
+  margin-left: 2px;
+}
+
+.footer {
+  width: 100%;
+  height: max-content;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top: 200px;
+  position: absolute;
+  background: map-get($paleta_cores, footer);
+}
+
+.footer-p{
+  padding-top: 0.8em;
+}
